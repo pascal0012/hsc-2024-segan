@@ -1,14 +1,10 @@
 # Diffusion-SEGAN: Speech Enhancement Generative Adversarial Network (trained with diffusion)
 
-This repository contains an implementation of the [Speech Enhancement Generative Adversarial Network](https://arxiv.org/abs/1703.09452) introduced by S. Pascual et. al in 2017 combined with [Diffusion-GAN](https://arxiv.org/abs/2206.02262) (Z. Wang, 2023).
+This repository contains an implementation of the [Speech Enhancement Generative Adversarial Network](https://arxiv.org/abs/1703.09452) introduced by S. Pascual et. al in 2017 combined with [Diffusion-GAN](https://arxiv.org/abs/2206.02262) (Z. Wang, 2023). It was created to participate in the [Helsinki Speech Challenge 2024](https://arxiv.org/abs/2406.04123) and is therefore designed to run on its provided dataset, however it should be easily adaptable to other tasks.
 
 ## Authors
 
 Implemented by [Pascal Makossa](mailto:pascal.makossa@tu-dortmund.de) as a part of his bachelor thesis under the supervision of Sebastian Konietzny and Prof. Dr. Stefan Harmeling (Artifical Intelligence Group, Department of Computer Science, TU Dortmund University, Germany).
-
-## About
-
-This project was created to participate in the [Helsinki Speech Challenge 2024](https://arxiv.org/abs/2406.04123) and is therefore designed to run on that dataset, however it should be easily adaptable to other datasets.
 
 ## Architecture
 
@@ -132,19 +128,44 @@ python train.py --levels All --epochs 4000 --batch_size 50 --lr 0.0001 --recon_m
 
 ## Results
 
-Visible below are some examples of enhanced audio files from the [Helsinki Speech Challenge 2024 dataset](https://zenodo.org/records/11380835):
+Below are some examples of enhanced audio files from the [Helsinki Speech Challenge 2024 dataset](https://zenodo.org/records/11380835). Regardless of the task, the entire enhancement architecture achieved an **Real-Time Factor (RTF) of ~0.04** on an Apple M3 chip.
 
-|Task|Recorded|Enhanced|
-|----|--------|--------|
-|T1L1| | |
-|T1L2| | |
-|T1L3| | |
-|T1L4| | |
-|T1L5| | |
-|T1L6| | |
-|T1L7| | |
-|T2L1| | |
-|T2L2| | |
-|T2L3| | |
+### Task 1 Level 1
 
-Regardless of the task, the entire enhancement architecture achieved an **Real-Time Factor (RTF) of ~0.04** on an Apple M3 chip.
+#### Recorded
+
+https://github.com/user-attachments/assets/45e0be90-cbae-45bd-8cf5-ccac3efafb52
+
+#### Enhanced
+
+https://github.com/user-attachments/assets/6c171566-3fac-4e8e-a718-c2e578f97a18
+
+### Task 1 Level 3
+
+#### Recorded
+
+https://github.com/user-attachments/assets/508b3bc4-e9f7-4782-a755-30e0d0455fe8
+
+#### Enhanced
+
+https://github.com/user-attachments/assets/94017083-740d-4f18-86ba-0ce46ef4b2bd
+
+### Task 1 Level 5
+
+#### Recorded
+
+https://github.com/user-attachments/assets/d63611d7-5f55-4cac-8ef3-21f5e08c219c
+
+#### Enhanced
+
+https://github.com/user-attachments/assets/5d0fd97d-2526-4af0-8f35-7eb8f7d88b6f
+
+### Task 1 Level 7
+
+#### Recorded
+
+https://github.com/user-attachments/assets/5a0e02dd-4e6d-4ec8-87c6-25fce4d809ad
+
+#### Enhanced
+
+https://github.com/user-attachments/assets/59f151c7-0ae3-44dd-8417-b2301934d307
