@@ -50,6 +50,7 @@ data/*
 !data/.gitkeep
 models/*
 !models/.gitkeep
+!models/generator_*
 output/*
 !output/.gitkeep
 
